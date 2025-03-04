@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Poppins", serif; */
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: black;
+}
+
+@media only screen and (max-width: 700px) {
+    background-image {
+        width: 90vw;
+    }
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+    .artical{
+        flex-direction: column;
+    }
+}
+
+.background-image {
+    height: 95vh;
+    background-position: center center;
+    object-fit: cover;
+    background-image: url("photos/nrtback.jpg");
+    background-size: max(1450px, 100vw);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.box {
+    height: 95vh;
+    background-color: black;
+    opacity: 0.75;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    height: 100px;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+    align-items: center;
+
+}
+
+#lang {
+    border: 1px solid rgb(61, 59, 59);
+    border-radius: 5px;
+    padding: 7px 13px;
+    margin: 5px 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.634);
+    cursor: pointer;
+}
+
+.sign-in {
+    border: 1px solid rgb(229, 9, 20);
+    border-radius: 5px;
+    padding: 7px 13px;
+    margin: 5px 5px;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    cursor: pointer;
+
+}
+
+.hero {
+    z-index: 1;
+    position: relative;
+    color: white;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    gap: 10px;
+    text-align: center;
+    /* min-height: 75vh; */
+}
+
+.hero>:nth-child(1) {
+    font-weight: 750;
+    font-size: 56px;
+}
+
+.hero>:nth-child(2) {
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.hero>:nth-child(3) {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#mail {
+    border: 1px solid rgb(123, 120, 120);
+    color: white;
+    font-weight: 500;
+    background-color: rgba(22, 20, 20, 0.592);
+    font-size: 18px;
+    padding: 20px 150px 15px 20px;
+    border-radius: 3px;
+}
+
+.gs {
+    border: 1px solid rgb(229, 9, 20);
+    border-radius: 5px;
+    padding: 14px 30px;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.liner {
+    height: 5px;
+    width: 100%;
+    background-color: rgba(255, 5, 5, 0.822);
+}
+
+.lineb {
+    height: 4px;
+    width: 100%;
+    background-color: #1d398778;
+    box-shadow: 0 2px 20px 1px rgb(0, 76, 255);
+}
+
+/* this is the main contant */
+main {
+    width: 80vw;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.head-title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 40px 0;
+}
+
+.scroll-image {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 5px;
+}
+
+.scroll-image :hover{
+    transform: scale(1.1);
+
+}
+.img-position {
+    position: relative;
+    height: 276px;
+    width: 197px;
+    border-radius: 10px;
+    margin: 20px;
+    object-position: center center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.img1 {
+    background-image: url(photos/puspa.jpg);
+}
+
+.img2 {
+    background-image: url(photos/daku.jpg);
+}
+
+.img3 {
+    background-image: url(photos/doomdham.jpg);
+}
+
+.img4 {
+    background-image: url(photos/lab.jpg);
+}
+
+.img5 {
+    background-image: url(photos/lucky.jpg);
+}
+
+.img6 {
+    background-image: url(photos/venom.jpg);
+}
+
+.img7 {
+    background-image: url(photos/sgame.jpg);
+}
+
+.img8 {
+    background-image: url(photos/vevegam.jpg);
+}
+
+.numbers {
+    color: black;
+    font-size: 100px;
+    font-weight: 700;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+    bottom: -30px;
+    left: -20px;
+    cursor: pointer;
+}
+.artical{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.contant-box{
+    color: white;
+    background: linear-gradient(143deg, #192247 0%, #210e17 96.86%);/*<-----*/
+    border-radius: 20px;
+    padding: 15px;
+    height: 250px;
+    width: 300px;
+    position: relative;
+}
+.heading{
+    font-weight: 450;
+    font-size: 20px;
+    margin: 10px 0;
+}
+svg{
+position: absolute;
+bottom: 10px;
+right: 10px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.question:hover{
+    background-color: #bfbcbc7d;
+}
+.question{
+    display: flex;
+    height: 10px;
+    background-color: #95939345;
+    justify-content: space-between;
+    color: white;
+    padding: 30px;
+    font-size: 24px;
+    font-weight:400;
+    align-items: center;
+}
+/* here is footer section */
+footer{
+    width: 80vw;
+    margin: auto;
+    height: auto;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text{
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+}
+aside{
+    color: gray;
+    margin: 20px 0 20px 0;
+}
+
+.a-tag a{
+    color: gray;
+    justify-content: space-between;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot{
+    color: gray;
+    margin: 20px;
+}
