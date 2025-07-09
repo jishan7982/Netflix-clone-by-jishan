@@ -8,30 +8,33 @@
     padding: 0;
     
 }
-
+table tr td {
+    padding: 10px;
+}
 body {
     background-color: black;
 }
 
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 582px) {
     background-image {
-        width: 90vw;
+        width: 100vw;
     }
     body{
         justify-content: center;
         align-items: center;
+
     }
     .artical{
         flex-direction: column;
     }
-}
+} */
 
 .background-image {
     height: 95vh;
     background-position: center center;
     object-fit: cover;
     background-image: url("photos/nrtback.jpg");
-    background-size: max(1450px, 100vw);
+    /* background-size: max(1450px, 100vw); */
     background-repeat: no-repeat;
     position: relative;
 }
@@ -127,6 +130,7 @@ body {
     background-color: rgb(229, 9, 20);
     font-size: 25px;
     cursor: pointer;
+    margin: 10px;
 
 }
 
@@ -225,7 +229,8 @@ main {
 }
 .artical{
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -237,6 +242,7 @@ main {
     height: 250px;
     width: 300px;
     position: relative;
+    margin: 10px;
 }
 .heading{
     font-weight: 450;
@@ -300,4 +306,28 @@ aside{
 .foot{
     color: gray;
     margin: 20px;
+}
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Dark background for the track */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444; /* Scrollbar thumb color */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666; /* Lighter color on hover */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #444 #1a1a1a;
 }
